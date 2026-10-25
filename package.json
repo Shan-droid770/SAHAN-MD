@@ -1,0 +1,47 @@
+{
+  "name": "sahan-md-ofc",
+  "version": "3.1.0",
+  "description": "SAHAN-MD V3.1 — POWERFUL WHATSAPP BOT DEVELOPED BY SAHAN DISSANAYAKA",
+  "main": "sahan-md.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start sahan-md.js --deep-monitoring --attach --name SAHAN-MD",
+    "stop": "pm2 stop SAHAN-MD",
+    "restart": "pm2 restart SAHAN-MD",
+    "test": "node --test",
+    "sync:bot-zip": "node scripts/sync-bot-archive.js",
+    "check:bot-zip": "node scripts/sync-bot-archive.js --check"
+  },
+  "author": "Sahan Dissanayaka",
+  "license": "MIT",
+  "dependencies": {
+    "baileys": "npm:plogme@latest",
+    "@mjba/lyrics": "^1.3.0",
+    "awesome-phonenumber": "7.2.0",
+    "axios": "latest",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "form-data": "^4.0.0",
+    "ffmpeg": "latest",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "2.1.2",
+    "ffmpeg-static": "latest",
+    "fluent-ffmpeg": "latest",
+    "google-tts-api": "^2.0.2",
+    "jimp": "*",
+    "mongodb": "^6.9.0",
+    "megajs": "^1.3.10",
+    "node-shazam": "^1.2.7",
+    "pino": "^9.5.0",
+    "qrcode": "^1.5.4",
+    "telegram": "^2.26.22",
+    "yt-search": "latest",
+    "adm-zip": "latest",
+    "pm2": "^6.0.0",
+    "acorn": "^8.15.0"
+  }
+}

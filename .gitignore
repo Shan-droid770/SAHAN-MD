@@ -1,0 +1,10 @@
+node_modules/
+.bot-runtime/
+.bot-download-*/
+.env
+config.env
+data/
+*.log
+
+# Previous bot code and session snapshot retained for recovery
+.bot-runtime.backup/
