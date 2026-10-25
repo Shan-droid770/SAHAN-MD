@@ -26,7 +26,7 @@
 const config = require('./lib/config');
 
 module.exports = config.buildProxy({
-  SESSION_ID: 'ꜱᴀʜᴀɴ-ᴍᴅ~6LQ32K5T#CvPhSIR7TsDhPB0C1qET15aIJRVj_CQjMadxn2vVB4w',
+  SESSION_ID: 'ꜱᴀʜᴀɴ-ᴍᴅ~',
   BOT_NUMBER: '94774527220',
   CHAMA_API_KEY: '' // Moviepro වගේ Use කරනවනම් api.chamindu.site එකට ගිහින් Account එකක් හදාගෙන API_KEY එක මෙතෙන්ට දාගන්න
 });
