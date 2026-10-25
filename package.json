@@ -9,10 +9,8 @@
   "scripts": {
     "start": "pm2 start sahan-md.js --deep-monitoring --attach --name SAHAN-MD",
     "stop": "pm2 stop SAHAN-MD",
-    "restart": "pm2 restart SAHAN-MD",
-    "test": "node --test",
-    "sync:bot-zip": "node scripts/sync-bot-archive.js",
-    "check:bot-zip": "node scripts/sync-bot-archive.js --check"
+    "restart": "pm2 restart SAHAN-MD"
+    
   },
   "author": "Sahan Dissanayaka",
   "license": "MIT",
