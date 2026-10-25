@@ -108,20 +108,7 @@ For a VPS panel or a Pterodactyl-style Node.js panel:
 
 **If the panel fails to start:** check the Node.js version, the start script, missing native packages, and whether the host supports any required binaries.
 
-## 🤖 GitHub Actions — Koyeb Deployment
 
-A sample manual workflow is included at `.github/workflows/deploy-koyeb.yml`.
-
-To use it:
-
-1. Create a Koyeb API token in your Koyeb account.
-2. In your GitHub repository, open **Settings → Secrets and variables → Actions**.
-3. Add a repository secret named `KOYEB_API_TOKEN`.
-4. Review the workflow and replace the example service/app settings with values that match your Koyeb account and project.
-5. Open **Actions → Deploy to Koyeb** and run the workflow manually.
-
-> [!CAUTION]
-> The workflow is a starter template, not a guarantee that your Koyeb app is configured correctly. Verify the current Koyeb action inputs and your service settings before running it. Never put API tokens or session credentials directly in the workflow file.
 
 ## 🧰 Requirements
 
