@@ -1,158 +1,268 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/Shan-droid770/img-db/refs/heads/main/sahan-md-v3/file_000000001d6c81f9b39635a8c660c852.png" width="100%" alt="SAHAN-MD Official Banner" />
+  <img src="https://raw.githubusercontent.com/Shan-droid770/img-db/refs/heads/main/sahan-md-v3/file_000000001d6c81f9b39635a8c660c852.png" width="100%" alt="SAHAN-MD V3">
 
-  <h1>🔥 SAHAN-MD — MAIN BOT</h1>
-  <p><b>Powerful. Flexible. Yours to deploy.</b></p>
-  <p>A WhatsApp multi-device bot project by <b>Sahan Dissanayaka</b>.</p>
+  <h1>🔥 SAHAN-MD V3 🤖</h1>
 
-  <p>
-    <a href="https://github.com/Shan-droid770/SAHAN-MD"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository"></a>
-    <a href="https://sahan-md.sahanhost.qzz.io/"><img src="https://img.shields.io/badge/Pair%20Website-Open-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Pair Website"></a>
-    <a href="https://github.com/Shan-droid770/SAHAN-MD/stargazers"><img src="https://img.shields.io/github/stars/Shan-droid770/SAHAN-MD?style=for-the-badge&color=yellow" alt="GitHub Stars"></a>
-    <a href="https://github.com/Shan-droid770/SAHAN-MD/issues"><img src="https://img.shields.io/badge/Issues-Report%20a%20bug-orange?style=for-the-badge&logo=github" alt="Report an Issue"></a>
-  </p>
+  <p><b>POWERFUL • MULTI-FUNCTION • WHATSAPP BOT</b></p>
 
-  <p>
-    <a href="#-features">Features</a> •
-    <a href="#-pair-your-whatsapp">Pair WhatsApp</a> •
-    <a href="#-deployment-options">Deploy</a> •
-    <a href="#-panel-deployment">Panel Setup</a> •
-    <a href="#-credits">Credits</a>
-  </p>
+  <p>⚡ Powered by Sahan Dissanayaka ⚡</p>
 
-</div>
-
----
-
-## ⚡ About SAHAN-MD
-
-**SAHAN-MD** is a WhatsApp bot project designed to be deployed on your own hosting account. Use the pairing website to link your WhatsApp account, copy the generated `SESSION_ID`, configure it in the project as required, and then deploy your own bot instance.
-
-> [!IMPORTANT]
-> **SAHAN-MD MAIN BOT is self-hosted.** Pairing your WhatsApp account does not host the bot for you. After pairing, you must configure and deploy the bot on a supported host.
-
-## ✨ Features
-
-> The final feature list depends on the commands and plugins included in the current repository version.
-
-- 📱 WhatsApp Multi-Device session pairing
-- 🔐 Session-based connection setup
-- 🧩 Modular command/plugin support, if enabled in this build
-- 🌐 Multiple deployment options
-- ⚙️ Node.js-based project setup
-- 🛠️ Customizable bot configuration
-- 🚀 Deploy and manage your own instance
-
-## 🔗 Quick Links
-
-| Resource | Link |
-|---|---|
-| 📦 Source code | [SAHAN-MD Repository](https://github.com/Shan-droid770/SAHAN-MD) |
-| 📲 Pair website | [SAHAN-MD Pair Site](https://sahan-md.sahanhost.qzz.io/) |
-| 🐞 Report a bug | [Open an issue](https://github.com/Shan-droid770/SAHAN-MD/issues) |
-| 🌟 Support the project | [Star the repository](https://github.com/Shan-droid770/SAHAN-MD/stargazers) |
-
-## 📲 Pair Your WhatsApp
-
-1. Open the [SAHAN-MD Pair Website](https://sahan-md.sahanhost.qzz.io/).
-2. Enter your WhatsApp number in the format requested by the website.
-3. Open WhatsApp and go to **Linked devices**.
-4. Choose **Link a device** and follow the pairing instructions shown by the site.
-5. Copy the generated `SESSION_ID` and keep it private.
-6. Add the session value to the configuration method expected by this repository.
-7. Deploy the project and check the host logs for a successful connection.
-
-> [!WARNING]
-> Never share your `SESSION_ID`, QR code, or pairing code with anyone. Anyone who obtains valid session credentials may be able to access your WhatsApp account. If a session is exposed, log out the linked device from WhatsApp and generate a new session.
-
-## 🚀 Deployment Options
-
-Choose a host, then follow its current deployment instructions. The buttons below open each platform; they do not automatically deploy the repository until you configure the required settings.
-
-<div align="center">
-
-| Platform | Deploy / Open |
-|---|---|
-| **Heroku** | [![Deploy to Heroku](https://img.shields.io/badge/Deploy-Heroku-7952B3?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/Shan-droid770/SAHAN-MD) |
-| **Koyeb** | [![Deploy to Koyeb](https://img.shields.io/badge/Deploy-Koyeb-121212?style=for-the-badge)](https://app.koyeb.com/) |
-| **Render** | [![Deploy to Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/) |
-| **Railway** | [![Deploy to Railway](https://img.shields.io/badge/Deploy-Railway-7B61FF?style=for-the-badge&logo=railway&logoColor=white)](https://railway.com/) |
-
-</div>
-
-### General deployment checklist
-
-1. Fork or import this repository into your GitHub account.
-2. Create a new app/service on your chosen hosting platform.
-3. Connect your repository and select the correct branch.
-4. Select the Node.js runtime if the host asks for a runtime.
-5. Set the start command to the one specified by the project's `package.json` (commonly `npm start`).
-6. Configure `SESSION_ID` and any other required values using the configuration method documented by the current source code.
-7. Deploy, then inspect the logs for missing packages, configuration errors, or WhatsApp connection errors.
-
-> [!NOTE]
-> Hosting platforms change their dashboards and policies. Check the current platform documentation before deploying. Do not add environment variables unless the code actually reads them; some project versions may expect configuration in a file instead.
-
-## 🖥️ Panel Deployment
-
-For a VPS panel or a Pterodactyl-style Node.js panel:
-
-1. Create a new application/server using a compatible Node.js version specified in `package.json`.
-2. Upload the project files or connect the repository if the panel supports Git.
-3. Make sure `package.json` and the lockfile are in the project root.
-4. Install dependencies using the panel's install/startup setup, or run `npm install` if the panel provides a terminal.
-5. Set the startup command to the command used by this repository (check `package.json`; often `npm start`).
-6. Add the required session/configuration values using the method this version expects.
-7. Start the server and inspect the console logs.
-
-**If the panel fails to start:** check the Node.js version, the start script, missing native packages, and whether the host supports any required binaries.
-
-
-
-## 🧰 Requirements
-
-- A compatible Node.js version (check `package.json`)
-- GitHub account for repository-based deployment
-- Hosting account that supports the app's runtime and dependencies
-- WhatsApp account for pairing
-- Any additional runtime binaries required by the bot's actual commands
-
-## 🛠️ Troubleshooting
-
-| Problem | Things to check |
-|---|---|
-| Bot does not start | `package.json` start script, Node.js version, dependency installation |
-| Pairing succeeds but bot stays offline | `SESSION_ID` configuration, host logs, session validity |
-| Command replies do not arrive | WhatsApp connection logs, command loader, permissions, and errors |
-| Media command fails | Required binaries/dependencies and whether the media has a supported audio/video stream |
-| App repeatedly restarts | Host memory limits, crashes, missing configuration, or unsupported dependencies |
-
-## 🔐 Security Notes
-
-- Keep `SESSION_ID`, API keys, and tokens private.
-- Never commit secrets into a public GitHub repository.
-- Use GitHub Actions repository secrets for CI/CD credentials.
-- Only deploy code you trust, and review changes before updating your bot.
-- Follow WhatsApp's terms and your hosting provider's acceptable-use rules.
-
-## 💖 Credits
-
-<div align="center">
-
-**Created and maintained by Sahan Dissanayaka**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Shan--droid770-181717?style=for-the-badge&logo=github)](https://github.com/Shan-droid770)
-[![Repository](https://img.shields.io/badge/SAHAN--MD-MAIN%20BOT-red?style=for-the-badge&logo=github)](https://github.com/Shan-droid770/SAHAN-MD)
-
-**If this project helps you, consider giving the repository a ⭐**
-
-</div>
-
----
-
-<div align="center">
-  <sub>SAHAN-MD • MAIN BOT • Built with dedication by Sahan Dissanayaka</sub>
   <br>
-  <a href="#-sahan-md--main-bot">⬆ Back to top</a>
+
+  <a href="https://sahan-md.sahanhost.qzz.io/">
+    <img src="https://img.shields.io/badge/📲%20PAIR%20WHATSAPP-CLICK%20HERE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="PAIR WHATSAPP">
+  </a>
+
+  <br><br>
+
+  <a href="https://github.com/Shan-droid770/SAHAN-MD">
+    <img src="https://img.shields.io/badge/GITHUB-REPOSITORY-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+
+  <a href="https://github.com/Shan-droid770/SAHAN-MD/stargazers">
+    <img src="https://img.shields.io/github/stars/Shan-droid770/SAHAN-MD?style=for-the-badge&logo=github" alt="Stars">
+  </a>
+
+  <br><br>
+
+  <a href="#-features">FEATURES</a> •
+  <a href="#-pair-whatsapp">PAIR BOT</a> •
+  <a href="#-deployment">DEPLOYMENT</a> •
+  <a href="#-credits">CREDITS</a>
+
+</div>
+
+---
+
+## 🌟 ABOUT SAHAN-MD
+
+**SAHAN-MD V3** is a powerful multi-function WhatsApp bot project developed by **Sahan Dissanayaka**.
+
+Built to bring AI, media downloading, music, movies, group management, security features, entertainment, and useful WhatsApp tools together in one bot.
+
+> 🤖 One Bot. Multiple Features. Your WhatsApp Experience.
+
+### ✨ FEATURES
+
+<table>
+<tr>
+<td width="50%">
+
+### 🧠 AI & CHAT
+
+- 🤖 AI Chatbot
+- 🧠 GPT Integration
+- ♊ Gemini AI
+- 🎨 AI Image Generation
+- 💬 Interactive Chatbot
+
+</td>
+<td width="50%">
+
+### 🎬 MOVIES & ANIME
+
+- 🎥 Movie Search & Download
+- 🍿 Movie Sender
+- 📩 Movie Request System
+- 🎌 Anime Search & Download
+- 🎞️ Sinhala Subtitle Tools
+- 📚 Manga & Manhwa Sources
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### 🎵 MUSIC & DOWNLOADS
+
+- 🎧 Song Search & Download
+- 🎼 Spotify Tools
+- 📝 Lyrics Search
+- 🎙️ Shazam Music Identification
+- 📥 Multi-Source Media Downloader
+- 🎵 Channel Song Sender
+- 📱 TikTok Downloader
+- 📸 Instagram Downloader
+- 📘 Facebook Downloader
+
+</td>
+<td width="50%">
+
+### 🛡️ SECURITY & GROUPS
+
+- 🔗 Anti-Link Protection
+- 👁️ Anti-View Once (Anti-VV)
+- 🗑️ Anti-Delete
+- 👥 Group Management
+- 🚫 Kick & Mute
+- ⬆️ Promote & Demote
+- ⚙️ Admin Utilities
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### 📱 WHATSAPP TOOLS
+
+- 💾 Status Saver
+- 🎨 Sticker Tools
+- 🖼️ Image Conversion
+- 🎵 Audio Conversion
+- 🔄 Media Utilities
+- 🔘 Buttons & Carousels
+- 📡 WhatsApp Channel Tools
+
+</td>
+<td width="50%">
+
+### ⚡ SYSTEM & UTILITIES
+
+- 🏓 Ping & Speed
+- 💻 System Information
+- 💚 Alive Command
+- 📰 News Tools
+- 📚 Educational Utilities
+- 🎮 Fun Commands
+- 🌐 Public Mode
+
+</td>
+</tr>
+</table>
+
+> **Note:** Some features may depend on configuration, external APIs, available services, and the current bot version.
+
+---
+
+## 📲 PAIR WHATSAPP
+
+<div align="center">
+
+### 🔥 CONNECT YOUR WHATSAPP TO SAHAN-MD
+
+<a href="https://sahan-md.sahanhost.qzz.io/">
+  <img src="https://img.shields.io/badge/🚀%20PAIR%20YOUR%20WHATSAPP-OPEN%20PAIR%20SITE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="PAIR SAHAN-MD NOW">
+</a>
+
+<p><b>Click the button above to open the official pairing website.</b></p>
+
+</div>
+
+### 📌 Pairing Instructions
+
+1. Open the SAHAN-MD Pair Site.
+2. Follow the instructions displayed on the website.
+3. Open WhatsApp and navigate to **Linked Devices**.
+4. Select **Link a Device** and complete the pairing process.
+5. Obtain your session credentials as instructed.
+6. Configure the session using the method required by this repository.
+7. Deploy your bot instance on your own supported hosting service.
+
+### 🌐 Official Pair Website
+
+**https://sahan-md.sahanhost.qzz.io/**
+
+> ⚠️ Keep your session credentials private. Never share your session ID, QR code, or pairing code with other people.
+
+---
+
+## 🚀 DEPLOYMENT
+
+SAHAN-MD MAIN BOT is designed to run on your own hosting account or server.
+
+### ☁️ Supported Hosting Options
+
+<div align="center">
+
+<a href="https://dashboard.heroku.com/">
+<img src="https://img.shields.io/badge/HEROKU-Deploy%20Guide-7952B3?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
+</a>
+
+<a href="https://app.koyeb.com/">
+<img src="https://img.shields.io/badge/KOYEB-Deploy%20Guide-121212?style=for-the-badge" alt="Koyeb">
+</a>
+
+<a href="https://render.com/">
+<img src="https://img.shields.io/badge/RENDER-Deploy%20Guide-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="Render">
+</a>
+
+<a href="https://railway.com/">
+<img src="https://img.shields.io/badge/RAILWAY-Deploy%20Guide-7B61FF?style=for-the-badge&logo=railway&logoColor=white" alt="Railway">
+</a>
+
+</div>
+
+### 🖥️ Panel / VPS Installation
+
+1. Create a Node.js application on your hosting panel.
+2. Upload the public repository files or connect the GitHub repository.
+3. Install the required dependencies.
+4. Configure the session and other required settings.
+5. Set the correct startup command according to the project configuration.
+6. Start the application.
+7. Check the logs to verify that the bot connects successfully.
+
+> Deployment commands and requirements may vary depending on the hosting platform and the current repository version.
+
+---
+
+## 🔐 SECURITY
+
+- 🔒 Never expose your WhatsApp session credentials.
+- 🔑 Keep API keys and private configuration secure.
+- 🛡️ Avoid committing secrets to public repositories.
+- ⚙️ Review updates before deploying them.
+- 📜 Follow WhatsApp's terms and your hosting provider's rules.
+
+---
+
+## 🐞 SUPPORT & ISSUES
+
+Encountered a problem?
+
+- 📦 [SAHAN-MD GitHub Repository](https://github.com/Shan-droid770/SAHAN-MD)
+- 🐛 [Report an Issue](https://github.com/Shan-droid770/SAHAN-MD/issues)
+- ⭐ [Star the Repository](https://github.com/Shan-droid770/SAHAN-MD/stargazers)
+
+When reporting an issue, include the relevant error message but **never include session IDs, API keys, or other private credentials**.
+
+---
+
+## 💖 CREDITS
+
+<div align="center">
+
+<h3>🔥 SAHAN-MD V3 🤖</h3>
+
+<p><b>Developed by Sahan Dissanayaka</b></p>
+
+<a href="https://github.com/Shan-droid770">
+<img src="https://img.shields.io/badge/GITHUB-SHAN--DROID770-181717?style=for-the-badge&logo=github" alt="Developer GitHub">
+</a>
+
+<br><br>
+
+<a href="https://sahan-md.sahanhost.qzz.io/">
+<img src="https://img.shields.io/badge/📲%20PAIR%20SAHAN--MD-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Pair SAHAN-MD">
+</a>
+
+<br><br>
+
+<p>⭐ If you like this project, give the repository a star!</p>
+
+<p><b>⚡ POWERED BY SAHAN DISSANAYAKA ⚡</b></p>
+
+</div>
+
+---
+
+<div align="center">
+
+**SAHAN-MD V3 • MAIN BOT**
+
+<sub>Made with dedication by Sahan Dissanayaka</sub>
+
 </div>
