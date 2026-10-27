@@ -15,7 +15,7 @@
   "author": "Sahan Dissanayaka",
   "license": "MIT",
   "dependencies": {
-    "baileys": "npm:plogme@latest",
+    "baileys": "github:Shan-droid770/sahan-baileys",
     "@mjba/lyrics": "^1.3.0",
     "awesome-phonenumber": "7.2.0",
     "axios": "latest",
