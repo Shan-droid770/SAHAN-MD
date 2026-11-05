@@ -19,14 +19,14 @@
    පහල තියෙන **value 2ක් විතරයි** මාරු කරන්න ඕන.
 
      SESSION_ID  → pair site එකෙන් number එක pair කරාම ඔයාගේ WhatsApp
-                   inbox එකට message එකක් එනවා: `ꜱᴀʜᴀɴ-ᴍᴅ~...` (mega හෝ base64).
+                   inbox එකට message එකක් එනවා: `SAHANSID1:...` (mega හෝ base64).
                    ඒක මෙතන paste කරන්න.
      BOT_NUMBER  → මේ deploy එක කාගේ number එකද (94774527220 වගේ).
    ═══════════════════════════════════════════════════════════════════ */
 const config = require('./lib/config');
 
 module.exports = config.buildProxy({
-  SESSION_ID: 'SAHANSID1:vcd2JRBIO/+P8YECWkuzG+4naeaxgdEYAwg/abtsed/b8YDTXNdtfgUbwAPk1fZk+4y1BHj7tn7przEczlE82U54taTjjbJuO6djS0pDZ+BBtVRQCGrIPpxT+YFRUf2FZOaX4wiasvwhEiz6rezT4Q==', // මේ පොඩි ඉරි කෑලි දෙක ඇතුලේ Value දාන්න
+  SESSION_ID: process.env.SESSION_ID || 'SAHANSID1:vcd2JRBIO/+P8YECWkuzG+4naeaxgdEYAwg/abtsed/b8YDTXNdtfgUbwAPk1fZk+4y1BHj7tn7przEczlE82U54taTjjbJuO6djS0pDZ+BBtVRQCGrIPpxT+YFRUf2FZOaX4wiasvwhEiz6rezT4Q==', // මේ පොඩි ඉරි කෑලි දෙක ඇතුලේ Value දාන්න
   BOT_NUMBER: '94774527220', // මේ පොඩි ඉරි කෑලි දෙක ඇතුලේ Value දාන්න
   CHAMA_API_KEY: '' // මේ පොඩි ඉරි කෑලි දෙක ඇතුලේ Value දාන්න. Moviepro වගේ Use කරනවනම් api.chamindu.site එකට ගිහින් Account එකක් හදාගෙන API_KEY එක මෙතෙන්ට දාගන්න
 });
