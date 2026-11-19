@@ -38,6 +38,7 @@
     "qrcode": "^1.5.4",
     "telegram": "^2.26.22",
     "@involvex/yt-dlp": "2026.8.22",
+    "ipaddr.js": "2.2.0",
     "yt-search": "latest",
     "adm-zip": "latest",
     "pm2": "^6.0.0",
